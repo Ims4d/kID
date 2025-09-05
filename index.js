@@ -5,6 +5,8 @@ import * as cheerio from 'cheerio';
 const BASE_URL = 'https://komiku.org';
 const app = express();
 
+app.set('trust proxy', true);
+
 //helpers
 const axiosInstance = axios.create({
     timeout: 10000,
